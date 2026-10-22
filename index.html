@@ -563,6 +563,50 @@ h1,h2,h3,h4,h5,h6,
   }
 }
 
+/* =========================
+   HERO VIDEO
+========================= */
+
+.hero-video{
+  width:min(78vw,420px);
+  margin:0 auto 28px;
+  position:relative;
+  z-index:3;
+}
+
+.hero-video video{
+  display:block;
+  width:100%;
+  height:auto;
+  max-height:300px;
+  object-fit:cover;
+
+  border-radius:18px;
+
+  border:1px solid rgba(214,168,79,.55);
+
+  box-shadow:
+    0 15px 35px rgba(70,35,20,.12),
+    0 0 0 7px rgba(214,168,79,.05);
+
+  background:#fffaf0;
+}
+
+/* MOBILE */
+@media(max-width:650px){
+
+  .hero-video{
+    width:min(76vw,300px);
+    margin:0 auto 24px;
+  }
+
+  .hero-video video{
+    max-height:230px;
+    border-radius:14px;
+  }
+
+}
+
 
 /* =========================
    SECTIONS
@@ -1334,6 +1378,12 @@ footer{
 
     <div class="hero-content reveal">
 
+      <div class="hero-video">
+        <video autoplay muted loop playsinline>
+          <source src="video.mp4" type="video/mp4">
+        </video>
+      </div>
+
       <div class="blessing">
         With the blessings of the Almighty and our families
       </div>
@@ -1589,7 +1639,7 @@ footer{
       <div class="footer-line"></div>
 
       <div class="footer-names">
-        Somasundharam ♥ Aishwarya
+        Sanju ♥ Abi
       </div>
 
     </div>
