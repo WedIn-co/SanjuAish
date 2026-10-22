@@ -7,7 +7,7 @@
 <meta name="description" content="Wedding invitation of Somasundharam and Aishwarya">
 
 <style>
-@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Italiannofamily=Playfair+Display:wght@400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Italianno&family=Playfair+Display:wght@400;500;600&family=Cormorant+Garamond:wght@400;500;600;700&family=Bodoni+Moda:wght@400;500;600&family=Great+Vibes&display=swap");
 
 :root{
   --maroon:#681c2d;
@@ -1169,6 +1169,106 @@ footer{
 .reveal.visible{
   opacity:1;
   transform:none
+}
+
+
+
+/* =========================
+   PERFECT MOBILE LAYOUT
+========================= */
+
+@media (max-width:650px){
+  html,body{width:100%;max-width:100%;overflow-x:hidden;}
+  section,main,footer{width:100%;max-width:100%;overflow:hidden;}
+
+  /* OPENING */
+  #opening{min-height:100svh;width:100%;padding:20px;}
+  #opening:before{width:78vw;height:78vw;}
+  #opening:after{width:64vw;height:64vw;}
+  .open-card{width:100%;max-width:340px;padding:25px 10px;}
+  .open-card .ornament{width:120px;margin-bottom:18px;}
+  .open-card .small{font-size:10px;letter-spacing:2.5px;}
+  .open-card h1{font-size:clamp(34px,10vw,48px);line-height:1.05;letter-spacing:.02em;overflow-wrap:break-word;}
+  .open-card .sub{max-width:300px;font-size:15px;line-height:1.6;margin-bottom:24px;}
+  .tap{width:125px;height:125px;font-size:17px;}
+
+  /* HERO */
+  .hero{min-height:100svh;padding:80px 18px 55px;}
+  .mandala{width:105vw;max-width:430px;opacity:.7;}
+  .hero-content{width:100%;max-width:100%;}
+  .hero .blessing{max-width:300px;margin:0 auto 18px;font-size:11px;line-height:1.6;letter-spacing:2px;}
+  .names{width:100%;max-width:100%;font-size:clamp(38px,12vw,58px);line-height:1;letter-spacing:0;overflow-wrap:break-word;}
+  .weds{font-size:15px;letter-spacing:4px;}
+  .invite{width:100%;max-width:330px;margin:22px auto 0;font-size:16px;line-height:1.7;}
+  .scroll-cue{margin-top:32px;font-size:10px;letter-spacing:1.5px;}
+
+  /* GENERAL SECTIONS */
+  .wrap{width:100%;max-width:100%;padding:65px 16px;}
+  .section-title{width:100%;font-size:clamp(28px,8vw,38px);line-height:1.15;}
+  .section-kicker{width:100%;max-width:320px;margin-left:auto;margin-right:auto;margin-bottom:35px;font-size:10px;line-height:1.6;letter-spacing:2px;}
+
+  /* PHOTO */
+  .couple-photo{width:100%;margin:10px auto 45px;}
+  .photo-frame{max-width:calc(100vw - 55px);padding:5px;}
+  .couple-photo img{display:block;width:min(72vw,270px);height:min(90vw,340px);max-width:100%;object-fit:cover;}
+  .photo-frame:before{left:-20px;font-size:16px;}
+  .photo-frame:after{right:-20px;font-size:16px;}
+  .photo-caption{font-size:25px;line-height:1.2;}
+
+  /* TIMELINE */
+  .timeline{width:100%;max-width:100%;margin:35px auto 0;padding:5px 0;}
+  .timeline:before{left:12px;width:1.5px;}
+  .timeline:after{left:12px;top:-12px;font-size:15px;padding:3px 6px;}
+  .event,.event:nth-child(even){width:100%;margin:0;padding:0 0 28px 38px;text-align:left;}
+  .event:nth-child(odd):after,.event:nth-child(even):after{left:-1px;right:auto;top:20px;width:25px;height:25px;}
+  .event-card{width:100%;max-width:100%;padding:24px 20px;border-radius:6px 20px 6px 20px;}
+  .event:nth-child(even) .event-card{border-radius:20px 6px 20px 6px;}
+  .event-card:before{inset:7px;}
+  .event h3{font-size:21px;line-height:1.2;margin-bottom:10px;}
+  .date{font-size:17px;}
+  .time{font-size:15px;line-height:1.5;}
+
+  /* COUNTDOWN */
+  .countdown{width:100%;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;max-width:330px;margin:0 auto;}
+  .unit{width:100%;min-width:0;padding:15px 8px;border-radius:14px;}
+  .unit strong{font-size:32px;}
+  .unit span{font-size:9px;letter-spacing:1.5px;}
+  .target-note{font-size:12px;line-height:1.5;}
+
+  /* VENUE */
+  .venue-card{width:100%;max-width:100%;padding:35px 18px;border-radius:22px;}
+  .venue-icon{font-size:35px;}
+  .venue-card h3{font-size:27px;line-height:1.2;overflow-wrap:break-word;}
+  .venue-card p{font-size:15px;line-height:1.6;}
+  .map-btn{padding:12px 22px;font-size:15px;}
+
+  /* FOOTER */
+  footer{min-height:60svh;padding:60px 20px;}
+  .footer-inner{width:100%;max-width:330px;}
+  .footer-title{font-size:clamp(42px,12vw,58px);line-height:1.1;}
+  .footer-text{font-size:16px;line-height:1.7;}
+  .footer-names{font-size:23px;line-height:1.4;}
+
+  /* PETALS */
+  .petal{max-width:12px;}
+
+  /* SMALL-SCREEN INTERACTIONS */
+  .event-card:hover,.couple-photo img:hover{transform:none;}
+}
+
+/* EXTRA SMALL PHONES: 320px - 360px */
+@media (max-width:360px){
+  .open-card{max-width:300px;}
+  .open-card h1{font-size:34px;}
+  .names{font-size:37px;}
+  .invite{font-size:15px;}
+  .event,.event:nth-child(even){padding-left:34px;}
+  .event-card{padding:22px 17px;}
+  .event h3{font-size:20px;}
+  .countdown{max-width:290px;gap:8px;}
+  .unit strong{font-size:29px;}
+  .venue-card h3{font-size:25px;}
+  .footer-names{font-size:20px;}
 }
 
 </style>
